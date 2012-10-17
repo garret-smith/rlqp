@@ -1,0 +1,9 @@
+{application, rlqp,
+  [
+    {description, "Rate-limiting queue processor"},
+    {vsn, "0.1"},
+    {modules, [{{modules}}]},
+    {registered, []},
+    {applications, [kernel, stdlib]}
+  ]
+}.
