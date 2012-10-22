@@ -50,7 +50,7 @@ start_link(Name, Mod, Rate, Options) ->
 %%% Queue up a synchronous call.  The call will never time out.
 %%% @end
 sync_enqueue(Name, Term) ->
-	gen_server:call(Name, Term, infinity)
+	gen_server:call(Name, {enqueue, Term}, infinity)
 	.
 
 %%% @doc
